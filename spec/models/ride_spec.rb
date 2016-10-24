@@ -1,3 +1,12 @@
+# == Schema Information
+#
+# Table name: rides
+#
+#  id            :integer          not null, primary key
+#  user_id       :integer
+#  attraction_id :integer
+#
+
 require 'rails_helper'
 
 RSpec.describe Ride, :type => :model do

@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: attractions
+#
+#  id               :integer          not null, primary key
+#  name             :string
+#  tickets          :integer
+#  nausea_rating    :integer
+#  happiness_rating :integer
+#  min_height       :integer
+#
+
 require 'rails_helper'
 
 RSpec.describe Attraction, :type => :model do

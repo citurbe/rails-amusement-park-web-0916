@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :integer          not null, primary key
+#  name            :string
+#  password_digest :string
+#  nausea          :integer
+#  happiness       :integer
+#  tickets         :integer
+#  height          :integer
+#  admin           :boolean          default(FALSE)
+#
+
 require 'rails_helper'
 
 RSpec.describe User, :type => :model do
