@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
   has_many :attractions, through: :rides
 
   def mood
+    return "sad" if self.happiness == nil || self.nausea == nil
     if self.happiness < self.nausea
       "sad"
     else
